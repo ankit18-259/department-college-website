@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+    <link rel="shortcut icon" href="assets/web-icon.ico">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="nav">
+            <div class="nav-box">
+                <label for="nav-toggle" class="nav-toggle-label">
+                        <span>
+                            <i class="fas fa-bars nav-icon"></i>
+                        </span>
+                   </label>
+               <div class="ins-name">Assam Engineering College</div>
+            </div>
+                
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <a  class="active" href="#">Home</a>
+            <a href="#">Explore</a>
+            <a href="#">Contact</a>
+    </div>
+
+    <div class="sep">
+            <div class="sep-t1">Contact Us</div>
+            <img src="./sep.png" class="sep-img" alt="separator">
+    </div>
+
+<div class="map-container">
+        <h3>My Google Maps Demo</h3>
+        <div id="map"></div>
+</div>
+
+<script>
+    function initMap() {
+        var uluru = {lat: 26.143466, lng: 91.658711};
+        var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 17, center: uluru});
+        var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+ </script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXD9e7dSZMuNTzaF2JbPsIrqm9vAcb4IQ&callback=initMap">
+</script>
+</body>
+</html>
