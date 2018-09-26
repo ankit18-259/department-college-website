@@ -9,7 +9,54 @@
 }
 
 .map-container{
-    width: 90%;
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.m-contact{
+    width: 50%;
+    margin: 3rem auto;
+    text-align: center;    
+}
+
+.m-contact-body span{
+    font-weight: 700;
+}
+
+.m-contact-head{
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.m-contact-body{
+    font-size: 1.3rem;
+}
+
+@media (max-width: 900px){
+    .map-container{
+        font-size: 1.3rem;
+    }
+
+    .sep-t2{
+        font-size: 1rem;
+    }
+
+    .m-contact{
+        width: 80%;
+        margin: 3rem auto;   
+    }
+    
+    .m-contact-head{
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .m-contact-body{
+        font-size: 1.1rem;
+    }
+
 }

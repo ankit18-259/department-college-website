@@ -135,11 +135,13 @@ p,body{
 }
 
 .nav a{
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: #fff;
-    padding: 1.2rem;
+    padding: 0 .9rem;
+    height: 100%;
     font-size: 1.3rem;
-    justify-self: flex-end;
 }
 
 .ins-name{
@@ -351,7 +353,7 @@ footer{
         top: 0;
         height: auto;
         padding-left: 0;
-        padding-right: 1rem;
+        padding-right: 0;
     }
 
     .nav a{
@@ -360,7 +362,7 @@ footer{
         color: #fff;
         font-size: 1.2rem;
         padding: 1rem 0;
-        margin-left: 1.6rem;
+        padding-left: 1.6rem;
     }
     
     .ins-name{
@@ -372,13 +374,13 @@ footer{
     }
     
     .active{
-        color: #2d3e50;
-        background-color: #2ecc71;
+        color: #fff !important; 
+        background-color: #2d3e50 !important;
     }
     
     .nav a:hover{
-        background-color: #2ecc71;
         color: #2d3e50;
+        background-color: #2ecc71;
     }
 
     .nav-toggle:checked ~ a{
@@ -454,6 +456,10 @@ footer{
         font-size: 2rem;
     }
     /* arrows end */
+
+    .dname, .position, .foot-para{
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width: 576px){

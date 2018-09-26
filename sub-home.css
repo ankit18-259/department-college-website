@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
+
+/* hr styles start */
+
 hr {
     border: 0;
     height: 0;
@@ -9,9 +14,14 @@ hr {
     width: 90%;
 }
 
+/* hr styles end */
+
+/* sep start */
 .sep{
     margin-top: 7rem;
 }
+
+/* main-box start */
 
 .main-box{
     display: flex;
@@ -22,11 +32,12 @@ hr {
 .side-box{
     width: 400px;
     padding: 1rem;
+    margin: 0 auto;
 }
 
 .content-box{
-    width: 75%;
     padding: 1rem;
+    width: calc(100% - 400px);
 }
 
 .side-title{
@@ -40,6 +51,7 @@ hr {
 .side-text{
     font-size: 1.2rem;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .side-img{
@@ -69,6 +81,8 @@ hr {
     padding: 1rem;
 }
 
+/* redundant start */
+
 .title{
     padding: 1rem;
     font-size: 2rem;
@@ -86,6 +100,102 @@ hr {
 .list li{
     font-size: 1.1rem;
     padding-bottom: .9rem;
+}
+
+/* side links */
+
+.link-container{
+    background-color: #2d3e50;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 100%;
+}
+
+.link-box{
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+.link-list{
+    margin-top: 0;
+}
+
+.link-list li{
+    color: #2ecc71;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Montserrat';
+}
+
+.link-icon{
+    color: #fff;
+    padding: .7rem;
+    display: inline-block;
+}
+
+.fig-box{
+    text-align: center;
+    font-family: 'Poppins';
+    padding: 1.5rem;
+}
+
+.fig-num{
+    font-size: 2.5rem;
+    margin: .5rem auto;
+    margin-top: 0;
+}
+
+.fig-title{
+    font-size: 1.3rem;
+}
+/* style for responsiveness */
+
+@media (max-width: 900px){
+    .content-box{
+        width: 100%;
+    }
+
+    .main-box{
+        flex-wrap: wrap;
+    }
+
+    .main-box{
+        text-align: center;
+    }
+
+    .content-text-1{
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+
+    .content{
+        width: 100%;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .content-img{
+        width: 100%;
+        border-radius: 6px;
+        margin: 1rem auto;
+        padding: 0rem;
+    }
+
+    .link-list{
+        margin-left: 1rem;
+        text-align: left;
+    }
+
+    .link-container{
+        margin: 0 auto;
+    }
+
+    .link-box{
+        font-size: 1.4rem;
+    }
 }
 
 
