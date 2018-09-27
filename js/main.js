@@ -11,13 +11,13 @@ let counter = 1;
 let i = 0;
 let size = carouselImages[0].clientWidth;
 
-const primaryText = ["Assam Engineering College","Primary Text 2","Primary Text 3","Primary Text 4","Primary Text 5"];
+const primaryText = ["Assam Engineering College","Mission I","Mission II","Mission III","Mission IV"];
 const quoteText = [
-                        "Electronics and Telecommunication and Computer Science Department",
-                        "Creativity is the process of having original ideas that have value. It is a process; it's not random.",
-                        "Creativity is the process of having original ideas that have value. It is a process; it's not random.",
-                        "Creativity is the process of having original ideas that have value. It is a process; it's not random.",
-                        "Creativity is the process of having original ideas that have value. It is a process; it's not random."
+                        "Electronics and Telecommunication & Computer Science Department",
+                        "To impart quality education for producing skilled manpower in Electronics and Telecommunication engineering to cater for the need of the country and the society as a whole.",
+                        "To encourage research and innovation in Electronics and Telecommunication with industry- academia interaction.",
+                        "To maintain an environment for shared learning, team work and professional development.",
+                        "To promote the human values and ethics for sustainable environment and society."
                     ];
 
 carouselSlide.style.transform = 'translate(' +(-size*counter) +'px)';

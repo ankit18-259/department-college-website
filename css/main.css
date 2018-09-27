@@ -36,7 +36,8 @@ p,body{
     justify-content: center;
     color: #fff;
     text-align: center;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px 8px black,
+                 -1px -1px 8px  black;
 }
 
 .m-1{
@@ -70,7 +71,16 @@ p,body{
     padding: 0.5rem;
 }
 
-.box-1-btn{
+.box-1-t2 ul{
+    list-style-position: inside;
+}
+
+.box-1-t2 ul li{
+    padding-bottom: 1rem;
+}
+
+
+/* .box-1-btn{
     width: 150px;
     padding: 1.2rem;
     background-color: #fff;
@@ -79,7 +89,7 @@ p,body{
     font-size: 1.4rem;
     margin: 0.5rem auto;
     border: 3px solid #0f753a;
-}
+} */
 
 .box-1-btn:hover {
     color: #ffffff !important;
@@ -168,10 +178,16 @@ p,body{
     align-items: center;
 }
 
-.fa-bars{
+.nav-icon{
     padding: 1.6rem;
     font-size: 2rem;
     color: #2d3e50;
+    text-align: center;
+}
+
+.fa-times{
+    width: 79.2px;
+    height: 83.2px;
 }
 
 .nav-box label{
@@ -283,7 +299,7 @@ footer{
 .foot-para{
     color: rgba(256,256,256,0.47);
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .foot-box{
@@ -320,7 +336,7 @@ footer{
 .dname{
     font-size: 1.3rem;
     color: #2ecc71;
-    padding: 0.2rem;
+    margin: 1rem;
     padding-bottom: 1rem;
 }
 
@@ -346,6 +362,10 @@ footer{
 /* responsive styling */
 
 @media (max-width: 900px){
+    .box-1-t2 ul{
+        padding: 0;
+    }
+
     .nav{
         width: 100%;
         display: block;
@@ -411,6 +431,7 @@ footer{
     /* main starts */
     .m-1{
         font-size: 2rem;
+        width: 80%;
     }
 
     .m-p{
@@ -457,8 +478,12 @@ footer{
     }
     /* arrows end */
 
-    .dname, .position, .foot-para{
+    .dname, .position{
         font-size: 1.1rem;
+    }
+
+    .foot-para{
+        font-size: 1rem;
     }
 }
 

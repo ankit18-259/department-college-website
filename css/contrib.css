@@ -1,0 +1,21 @@
+.contrib-list .list li{
+    padding-left: 1rem;
+}
+
+.content-text-1{
+    font-size: 1.3rem !important;
+}
+
+@media (max-width:900px){
+    .contrib-list{
+        text-align: left;
+    }
+
+    .contrib-list ol li{
+        font-size: .95rem;
+    }
+
+    .content-box{
+        order: -1;
+    }
+}

@@ -51,4 +51,10 @@
     #facilities td,#facilities th{
         font-size: .8rem;
     }
+
+    /* special styling */
+
+    .content-box{
+        order: -1;
+    }
 }
